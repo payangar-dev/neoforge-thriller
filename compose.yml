@@ -43,6 +43,7 @@ services:
     volumes:
       - ./data:/data
       - ./server.mrpack:/server.mrpack
+    privileged: true
     stdin_open: true
     tty: true
     restart: unless-stopped
