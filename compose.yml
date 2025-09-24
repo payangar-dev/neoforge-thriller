@@ -18,6 +18,7 @@ services:
       MOTD: "Cauchemar"
 
       LEVEL_TYPE: FLAT
+      GENERATE_STRUCTURES: false
       GENERATOR_SETTINGS: >-
         {
             "layers": [
@@ -30,8 +31,7 @@ services:
                     "height": 350
                 }
             ],
-            "biome": "minecraft:plains",
-            "structures": {}
+            "biome": "minecraft:plains"
         }
 
       MODRINTH_MODPACK: "/server.mrpack"
