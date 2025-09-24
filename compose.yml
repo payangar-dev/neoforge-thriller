@@ -17,6 +17,23 @@ services:
       DIFFICULTY: "hard"
       MOTD: "Cauchemar"
 
+      LEVEL_TYPE: FLAT
+      GENERATOR_SETTINGS: >-
+        {
+            "layers": [
+                {
+                    "block": "minecraft:bedrock",
+                    "height": 1
+                },
+                {
+                    "block": "minecraft:stone",
+                    "height": 350
+                }
+            ],
+            "biome": "minecraft:plains",
+            "structures": {}
+        }
+
       MODRINTH_MODPACK: "/server.mrpack"
     networks:
       - proxy
